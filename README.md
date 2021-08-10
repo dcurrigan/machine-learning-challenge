@@ -74,10 +74,12 @@ Example code sourced <a href="https://bl.ocks.org/starcalibre/6cccfa843ed254aa0a
   
   
 # Sources
-|No|Source|Link|
-|-|-|-|
-|1|United States Census Beureau            |https://data.census.gov/cedsci/| 
-|2|Dynamic Colour Scale Legend             |https://bl.ocks.org/starcalibre/6cccfa843ed254aa0a0d|
+|No|Model|Accuracy|Precision|Recall|F1-score|
+|-|-|-|-|-|-|
+|1|Decision Tree                |0.89|0.89|0.89|0.89|
+|2|Deep Learning                |0.90|0.90|0.90|0.90|
+|3|Support Vector Machine       |0.80|0.80|0.80|0.80|
+|4|k Nearest Neighbor           |0.81|0.81|0.81|0.81|
 
    
 # Contributors  
