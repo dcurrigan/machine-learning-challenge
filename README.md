@@ -48,7 +48,7 @@ machine-learning-challenge
   
 * Each model has been saved as individual jupyter notebook 
 * The final, best performing model was the deep learning neural network. This has been saved in h5 file format
-* This can loaded by runnning the final cell in the Deep learning notebook, or with the following code:  
+* This can be loaded by runnning the final cell in the deep learning notebook, or with the following code:  
 
 ```
 # Load the model
@@ -57,24 +57,26 @@ model = load_model("Model 2 - Deep_learning.h5")
 ```   
    
 
-# Design 
-I've created an interactive web visualisation using D3 to explore the US Census Bureau data. <a href="https://data.census.gov/cedsci/">US Census Bureau data</a>. An interactive scatter plot has been generated with the data, allowing the user to investigate the data further by changing axes or the colour scale for the chart (see below).  
+# Design  
+Four models were trialled for this project:  
+1. Decision tree  
+2. Deep learning neural network  
+3. Support vector machine  
+4. k-nearest neighbor  
   
-![D3](/Images/d3.gif)  
+<strong>Pre-processing</strong>
+Basic data cleaning was first performed with removal of Nan and null values  
+Definitions for the columns headers was sourced from <a href="https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html">NASA exoplanet archive</a>  
   
-  
-Example code sourced <a href="https://bl.ocks.org/starcalibre/6cccfa843ed254aa0a0d">here</a> provided the basis for the colour scaling and legend. The data points are coloured based upon the scale generated with scaleQuantize(), which allows scaling of a numerical value in the domain to a string (the colour hex value) in the range.    
-  
-**Example Code:** Creating a colour scale 
-```
-  function colour_scaler(data) {
-    return d3.scaleQuantize()
-      .domain([(d3.min(censusData, d => d[data])), (d3.max(censusData, d => d[data]))])  
-      .range(['#E7F1D7', '#D0E7BD', '#B2DDA3', '#8FD28A', '#71C67B', '#59BA76', '#41ae76', '#379A7C', '#2E857E', '#256770', '#1D465B'])
+All columns relating to level of uncertainty (error) were removed as these would relate only to the individual feature and would be not relevant to classification.  
 
-  };
-```
+'koi_disposition' was used for *y* and consisted of three possible options - 'CONFIRMED', 'FALSE POSITIVE', or 'CANDIDATE'. All other features were inititially used for *X*.
   
+*X* and *y* values were split into training and testing sets using SKlearns train_test_split. *X* values were then scaled using a MinMaxScaler. *y*-values were converted from categorical to numerical using label encoder. For the neural network keras to_categorical was additionally used.  
+
+<strong>Feature Selectiong</strong>
+To optimise feature selection various methods were trialled. 
+ 
   
 # Model Performance
 |No|Model|Accuracy|Precision|Recall|F1-score|
