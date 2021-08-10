@@ -16,13 +16,10 @@ Week 21 Machine Learning Homework
 * [Status](#Status)  
 
 # Project Intro
-This project involved using D3 to create a scatter plot between variable in from the <a href="https://data.census.gov/cedsci/">US Census Bureau</a> 2014 dataset. The briefing for the project was as follows: 
-
-*Welcome to the newsroom! You've just accepted a data visualization position for a major metro paper. You're tasked with analyzing the current trends shaping people's lives, as well as creating charts, graphs, and interactive elements to help readers understand your findings.*  
+This project involved creating machine learning models capable of classifying possible exoplanets into one of three categores - 'CONFIRMED', 'FALSE POSITIVE', or 'CANDIDATE' - based upon data from the <a href="https://www.kaggle.com/nasa/kepler-exoplanet-search-results>NASA Kepler Space Telescope</a>. The briefing for the project was as follows: 
   
-*The editor wants to run a series of feature stories about the health risks facing particular demographics. She's counting on you to sniff out the first story idea by sifting through information from the U.S. Census Bureau and the Behavioral Risk Factor Surveillance System.*  
-  
-*The data set included with the assignment is based on 2014 ACS 1-year estimates*  
+*Over a period of nine years in deep space, the NASA Kepler space telescope has been out on a planet-hunting mission to discover hidden planets outside of our solar system.
+To help process this data, you will create machine learning models capable of classifying candidate exoplanets from the raw dataset.*  
 
   
 # Project Structure  
@@ -33,7 +30,9 @@ machine-learning-challenge
 |__ hp_dir/                                 # Directory for neural network hyperparameter tuning  
 |
 |__ README.md                               # This file
-|__ exoplanets.jpg                          
+|__ exoplanets.jpg                          # images files for the readme
+|__ matrix1.png
+|__ matrix2.png
 |                           
 |__ model_1 - Decision_Tree.ipynb 
 |__ model_2 - Deep Learning.ipynb           # Directory for css stylesheets                             
@@ -43,7 +42,6 @@ machine-learning-challenge
 |__ model_2 - Deep Learning.ipynb           # The final model
 |                             
 |   
-|
 ``` 
   
 # Setup 
@@ -73,13 +71,16 @@ Example code sourced <a href="https://bl.ocks.org/starcalibre/6cccfa843ed254aa0a
 ```
   
   
-# Sources
+# Model Performance
 |No|Model|Accuracy|Precision|Recall|F1-score|
 |-|-|-|-|-|-|
 |1|Decision Tree                |0.89|0.89|0.89|0.89|
 |2|Deep Learning                |0.90|0.90|0.90|0.90|
 |3|Support Vector Machine       |0.80|0.80|0.80|0.80|
-|4|k Nearest Neighbor           |0.81|0.81|0.81|0.81|
+|4|k Nearest Neighbor           |0.81|0.81|0.81|0.81|  
+  
+![ML](/matrix1.png)   ![ML](/matrix2.png)   
+Comparative confusion matrices for the best two performing final models, decision tree (left) and deep learning neural network (right) 
 
    
 # Contributors  
