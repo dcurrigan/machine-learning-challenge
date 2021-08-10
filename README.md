@@ -64,7 +64,7 @@ Four models were trialled for this project:
 3. Support vector machine  
 4. k-nearest neighbor  
   
-<strong>Pre-processing</strong>
+<strong>Pre-processing</strong>  
 Basic data cleaning was first performed with removal of Nan and null values  
 Definitions for the columns headers was sourced from <a href="https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html">NASA exoplanet archive</a>  
   
@@ -74,7 +74,7 @@ All columns relating to level of uncertainty (error) were removed as these would
   
 *X* and *y* values were split into training and testing sets using SKlearns train_test_split. *X* values were then scaled using a MinMaxScaler. *y*-values were converted from categorical to numerical using label encoder. For the neural network keras to_categorical was additionally used.  
 
-<strong>Feature Selectiong</strong>
+<strong>Feature Selectiong</strong>  
 To optimise feature selection various methods were trialled. 
  
   
