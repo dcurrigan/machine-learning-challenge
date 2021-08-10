@@ -39,18 +39,23 @@ machine-learning-challenge
 |__ model_3 - SVM.ipynb                               
 |__ model_4 - KNN.ipynb                                 
 |                                 
-|__ model_2 - Deep Learning.ipynb           # The final model
+|__ model_2 - Deep Learning.ipynb           # The best performing model
 |                             
 |   
 ``` 
   
 # Setup 
   
-* The site is can be accessed at: https://dcurrigan.github.io/D3-challenge/
-* The html for the site is all contained in index.html
-* All styles are contained within static/css/D3style.css and style.css
-* The javascript code enabling the functionality of the site is can be found within static/js/app.js
-* The base dataset is found within data.csv   
+* Each model has been saved as individual jupyter notebook 
+* The final, best performing model was the deep learning neural network. This has been saved in h5 file format
+* This can loaded by runnning the final cell in the Deep learning notebook, or with the following code:  
+
+```
+# Load the model
+from tensorflow.keras.models import load_model
+model = load_model("Model 2 - Deep_learning.h5")
+```   
+   
 
 # Design 
 I've created an interactive web visualisation using D3 to explore the US Census Bureau data. <a href="https://data.census.gov/cedsci/">US Census Bureau data</a>. An interactive scatter plot has been generated with the data, allowing the user to investigate the data further by changing axes or the colour scale for the chart (see below).  
