@@ -4,7 +4,7 @@ Week 21 Machine Learning Homework
 > Created by Dale Currigan  
 > August 2021  
   
-![ML](/Images/Capture2.png)  
+![ML](/exoplanets.jpg)  
 
 ## Table of contents  
 * [Project Intro](#Project-Intro)  
@@ -29,27 +29,20 @@ This project involved using D3 to create a scatter plot between variable in from
 ```
 machine-learning-challenge   
 |  
-|    
-|__ index.html                          # The site landing page html doc
-|__ README.md                           # This file
+|__ ipynb_checkpoints/                      # Directory for notebook savepoints
+|__ hp_dir/                                 # Directory for neural network hyperparameter tuning  
 |
-|__ static/                              
-|   |__css/                             # Directory for css stylesheets
-|   |  |__ d3Style.css                              
-|   |  |__ style.css                              
-|   |
-|   |__data/                            # Directory for the census data
-|   |  |__ data.csv
-|   | 
-|   |__js/                              # Directory for javscript code
-|      |__ app.js
-|      |__ eslintrc.json
-|      
-|__ Images/                             # Directory for image files
-|   |__ d3.gif
-|   |__ capture.png
-|   |__ giphy.gif
-|   |__ newspaper.svg
+|__ README.md                               # This file
+|__ exoplanets.jpg                          
+|                           
+|__ model_1 - Decision_Tree.ipynb 
+|__ model_2 - Deep Learning.ipynb           # Directory for css stylesheets                             
+|__ model_3 - SVM.ipynb                               
+|__ model_4 - KNN.ipynb                                 
+|                                 
+|__ model_2 - Deep Learning.ipynb           # The final model
+|                             
+|   
 |
 ``` 
   
