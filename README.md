@@ -81,7 +81,7 @@ For the decision tree model feature importance was ranked. The model was re-run 
 
 For the deep learning model recursive feature elimination was used to find the optimal features to include in the model. 
   
-<strong>Assumptions</strong>
+<strong>Assumptions</strong>  
 For the deep learning model the 2 hidden layers assumed a rectified linear unit activation function, whilst the output layer assumed a sigmoid function
  
   
