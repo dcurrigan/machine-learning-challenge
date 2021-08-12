@@ -74,12 +74,16 @@ All columns relating to level of uncertainty (error) were removed as these would
   
 *X* and *y* values were split into training and testing sets using SKlearns train_test_split. *X* values were then scaled using a MinMaxScaler. *y*-values were converted from categorical to numerical using label encoder. For the neural network keras to_categorical was additionally used.  
 
-<strong>Feature Selectiong</strong>  
+<strong>Feature Selection</strong>  
 To optimise feature selection various methods were trialled. 
 
 For the decision tree model feature importance was ranked. The model was re-run with after eliminating of models of low contribution to the model, but this this decreased the model score.  
 
 For the deep learning model recursive feature elimination was used to find the optimal features to include in the model. 
+  
+<strong>Hyperparameter Tuning</strong>  
+
+  
   
 <strong>Assumptions</strong>  
 For the deep learning model the 2 hidden layers assumed a rectified linear unit activation function, whilst the output layer assumed a sigmoid function
