@@ -106,9 +106,9 @@ In conclusion the deep learning model achieved relative success in classifying p
   
 # Sources
 |No|Source|url|
-|-|-|-|-|-|-|
-|1|NASA Kepler Space Telescope Data - Kaggle                |https://www.kaggle.com/nasa/kepler-exoplanet-search-results|
-|2|NASA exoplanet archive               |https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html|
+|-|-|-|
+|1|NASA Kepler Space Telescope Data - Kaggle        |https://www.kaggle.com/nasa/kepler-exoplanet-search-results|
+|2|NASA exoplanet archive                           |https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html|
 
 
   
