@@ -97,7 +97,7 @@ The deep learning model narrowly outperformed the decision tree model with compa
 Confusion matrices for the two better performing models are shown below:
 
 <img src="/matrix1.png" alt="ML" width="400"/><img src="/matrix2.png" alt="ML" width="400"/>
-< caption >Comparative confusion matrices for the best two performing final models, decision tree (left) and deep learning neural network (right)</caption >
+<caption>Comparative confusion matrices for the best two performing final models, decision tree (left) and deep learning neural network (right)</caption>
 
 The confusion matrices show that the performance of the two models across the classification options was quite similar, although the decision tree model had slightly more incorrecly classified plaents as "FALSE POSITIVE" when they were in fact "CANDIDATE" (9 occurrences for decision tree vs 0 for deep learning model). 
 
