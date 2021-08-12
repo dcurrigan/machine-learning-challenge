@@ -90,7 +90,7 @@ For the deep learning model Keras tuner was used to tune the numer of layers in 
 * Decision tree: At the beginning, the whole training set is considered as the root. Records are distributed recursively on the basis of attribute values
 * Deep learning: The 2 hidden layers assumed a rectified linear unit activation function, whilst the output layer assumed a sigmoid function
 
-<strong>Results</Strong>
+<strong>Results</Strong>  
 The deep learning model narrowly outperformed the decision tree model with comparative score of 0.898 vs 0.889 repectively. The SVM and KNN models had much lower performance with R2 scores of 0.8 and 0.81 even after hyperparameter tuning. 
 
 Confusion matrices for the two better performing models are shown below:
@@ -102,19 +102,16 @@ The confusion matrices show that the performance of the two models across the cl
 
 In conclusion the deep learning model achieved relative success in classifying possible explanets, with almost 90% accuracy.
 
-
+  
   
 # Sources
-|No|Model|Accuracy|Precision|Recall|F1-score|
+|No|Source|url|
 |-|-|-|-|-|-|
-|1|Decision Tree                |0.89|0.89|0.89|0.89|
-|2|Deep Learning                |0.90|0.90|0.90|0.90|
-|3|Support Vector Machine       |0.80|0.80|0.80|0.80|
-|4|k Nearest Neighbor           |0.81|0.81|0.81|0.81|  
+|1|NASA Kepler Space Telescope Data - Kaggle                |https://www.kaggle.com/nasa/kepler-exoplanet-search-results|
+|2|NASA exoplanet archive               |https://exoplanetarchive.ipac.caltech.edu/docs/API_kepcandidate_columns.html|
+
+
   
-
-
-   
 # Contributors  
 Dale Currigan  
 [@dcurrigan](https://github.com/dcurrigan)  
